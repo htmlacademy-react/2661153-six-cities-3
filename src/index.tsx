@@ -1,5 +1,9 @@
+// src/index.tsx
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import App from './components/App';
+
+const offersCount = 5; // Можно менять это число
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -7,6 +11,6 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <React.StrictMode>
-    <h1>Hello, World!</h1>
+    <App offersCount={offersCount} />
   </React.StrictMode>
 );
